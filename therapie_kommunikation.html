@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"> </head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="dashboard.html">Pflegedienstportal</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <form class="form-inline m-0">
+          <input class="form-control mr-2" type="text" placeholder="Patient">
+          <button class="btn btn-primary" type="submit">Patient Suchen</button>
+        </form>
+      </div>
+    </div>
+    <a class="btn navbar-btn ml-2 text-white btn-secondary"><i class="fa d-inline fa-lg fa-user-circle-o"></i>Abmelden</a>
+  </nav>
+  <div class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Therapie Kommunikation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="btn-group">
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Filter</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Filtern nach Zeit</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-target="#patientSuchen" data-toggle="modal">Filtern nach Patient</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-target="#senderSuchen" data-toggle="modal">Filtern nach Sender</a>
+              </div>
+            </div>
+            <a href="meine_doku.html" class="btn btn-primary" data-target="#neuNachricht" data-toggle="modal">+ Neue Nachricht</a>
+            <a href="" class="btn btn-primary">Gesendet</a>
+            <a href="#" class="btn btn-primary" data-target="#notizMain" data-toggle="modal">Web Chat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Zeit</th>
+                <th>Für Patient</th>
+                <th>Sender</th>
+                <th>Thema</th>
+                <th>Gelesen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-warning">
+                <td>
+                  <a href="therapie_nachricht.html">1</a>
+                </td>
+                <td>12.01.2018</td>
+                <td>Herr Frühauf</td>
+                <td>Frau Wolf</td>
+                <td>Logotherapie Information</td>
+                <td>Nein</td>
+              </tr>
+              <tr class="">
+                <td class="">2</td>
+                <td>12.12.2017</td>
+                <td>Frau März</td>
+                <td>Herr Mai</td>
+                <td>Physio Infors Bemerkung&nbsp;</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>01.10.2017</td>
+                <td>Herr Winter</td>
+                <td>Herr Fuchs</td>
+                <td>Ergotherapeut Terminveränderung</td>
+                <td>Ja</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="neuNachricht">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Nachricht senden</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>An:</p>
+          <div class="modal-body">
+            <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Herr Mai@physiotherapeut</label> </div>
+            <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Herr Fuchs@Ergotherapeut</label> </div>
+            <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Frau Wolf@Logopäde</label> </div>
+          </div>
+          <li class="list-inline-item">Für Patient:</li>
+          <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
+        </div>
+        <div class="modal-body">
+          <li class="list-inline-item">Thema:</li>
+          <input class="form-control mr-2" type="text" placeholder="">
+          <li class="list-inline-item">Text:</li>
+          <input class="form-control mr-2 h-50" type="text" placeholder="">
+          <input type="file" class="form-control-file" id="exampleFormControlFile1"> </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Senden</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="patientSuchen">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Patient</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Suchen</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="senderSuchen">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sender</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body"><select class="form-control"><option value="1">Frau Wolf</option><option value="2">Herr Mai</option><option value="3">Herr Fuchs</option></select></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Suchen</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
