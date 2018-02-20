@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
+  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/calendar.css">
+</head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-success">
@@ -32,18 +35,32 @@
         <div class="col-md-12">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a href="#http://example.com" class="nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+              <a href="#http://example.com" class="nav-link text-success"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
               <a href="therapie_kommunikation.html" class="nav-link active">Patient Kalender</a>
             </li>
             <li class="nav-item">
-              <a href="#http://example.com" class="nav-link">Patient Dokumentation</a>
+              <a class="nav-link text-success" href="#http://example.com">Gesundheitszustand</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#http://example.com">Gesundheitszustand</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dokumentation&nbsp;</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h5 class="" contenteditable="true">Herr Winter</h5>
         </div>
       </div>
     </div>
