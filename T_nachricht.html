@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="btn-group">
-            <a href="therapie_kommunikation.html" class="btn btn-warning">Zurück zur List</a>
+            <a href="T_Dashboard.html" class="btn btn-warning">Zurück zur List</a>
             <a href="meine_doku.html" class="btn btn-warning" data-target="#antwort" data-toggle="modal">&lt;- Antworten</a>
             <a href="#" class="btn btn-warning" data-target="#teilenDialogNachricht" data-toggle="modal">Teilen -&gt;</a>
             <a href="#" class="btn btn-warning">Löschen</a>
@@ -84,6 +84,42 @@
             <br>-----------------------------
             <br>Ergotherapie xxx
             <br>Adesse:xxxx</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="teilenDialogNachricht">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Teilen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Herr Mai@physiotherapeut</label> </div>
+          <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Herr Fuchs@Ergotherapeut</label> </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Teilen</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="antwort">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Antworten</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <li class="list-inline-item">Text:</li>
+          <input class="form-control mr-2 h-50" type="text" placeholder="">
+          <input type="file" class="form-control-file" id="exampleFormControlFile1"> </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Senden</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
         </div>
       </div>
     </div>
