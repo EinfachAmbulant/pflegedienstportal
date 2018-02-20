@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+    <div class="container">
+      <a class="navbar-brand" href="">Pflegedienstportal</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <form class="form-inline m-0">
+          <input class="form-control mr-2" type="text" placeholder="Patient">
+          <button class="btn btn-warning" type="submit">Patient Suchen</button>
+        </form>
+      </div>
+    </div>
+    <a class="btn navbar-btn ml-2 text-white btn-secondary" href="login.html"><i class="fa d-inline fa-lg fa-user-circle-o"></i>Abmelden</a>
+  </nav>
+  <div class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs text-warning">
+            <li class="nav-item">
+              <a href="" class="nav-link text-warning"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Therapie Kommunikation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="btn-group">
+            <a href="T_Dashboard.html" class="btn btn-warning">Zurück zur List</a>
+            <a href="meine_doku.html" class="btn btn-warning" data-target="#antwort" data-toggle="modal">&lt;- Antworten</a>
+            <a href="#" class="btn btn-warning" data-target="#teilenDialogNachricht" data-toggle="modal">Teilen -&gt;</a>
+            <a href="#" class="btn btn-warning">Löschen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>&nbsp;AW Logotherapie Information Frau Pfleger</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 border border-primary">
+          <p class="lead h-50 w-100 m-1 p-1">Ok, danke für die Information
+            <br>
+            <br>
+            <br><i>-----Ursprüngliche Nachricht-----<br>Liebe Frau Pfleger:
+            <br>Es gibt Bermekung bei heutigen Therapien
+            <br>1:
+            <br>2:
+            <br>&nbsp;Vorschlag wäre:
+            <br>1:
+            <br>2:
+            <br>Mit herzlichen Grüßen
+            <br>Frau Wolf&nbsp;
+            <br>-----------------------------
+            <br>Ergotherapie xxx
+            <br>Adesse:xxxx</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="teilenDialogNachricht">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Teilen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Herr Mai@physiotherapeut</label> </div>
+          <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Herr Fuchs@Ergotherapeut</label> </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Teilen</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="antwort">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Antworten</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <li class="list-inline-item">Text:</li>
+          <input class="form-control mr-2 h-50" type="text" placeholder="">
+          <input type="file" class="form-control-file" id="exampleFormControlFile1"> </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Senden</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
