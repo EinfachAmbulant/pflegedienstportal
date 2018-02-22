@@ -1,0 +1,22 @@
+{
+  "name": "Pflegedienstportal",
+  "homepage": "https://github.com/EinfachAmbulant/pflegedienstportal",
+  "authors": [
+    "Peter Heisig <peter.heisig@medien-dresden.de>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "bootstrap": "^4.0.0",
+    "glyphicons": "^0.0.2"
+  }
+}
