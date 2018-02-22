@@ -1,0 +1,9 @@
+# Don't commit all of the dependencies' files …
+bower_components/**/*
+# … except those necessary
+!bower_components/moment/min/
+!bower_components/jquery/dist/
+!bower_components/bootstrap/dist/
+!bower_components/eonasdan-bootstrap-datetimepicker/build/
+!bower_components/glyphicons/
+# … webpack or something like that would be better though ;)
