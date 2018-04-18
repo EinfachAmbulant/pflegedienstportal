@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+  <nav class="navbar navbar-expand-md navbar-dark bg-warning">
     <div class="container">
       <a class="navbar-brand" href="">Pflegedienstportal</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -18,6 +18,10 @@
             <a class="nav-link text-white" href="#">Kontakt</a>
           </li>
         </ul>
+        <form class="form-inline m-0">
+          <input class="form-control mr-2" type="text" placeholder="Herr Winter">
+          <button class="btn btn-warning" type="submit">Patient Suchen</button>
+        </form>
       </div>
     </div>
     <a class="btn navbar-btn ml-2 text-white btn-secondary" href="index.html"><i class="fa d-inline fa-lg fa-user-circle-o"></i>Abmelden</a>
@@ -28,27 +32,15 @@
         <div class="col-md-12">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a href="T_Dashboard.html" class="nav-link text-danger"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+              <a href="T_Dashboard.html" class="nav-link text-warning"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link active text-danger">Patient Kalender</a>
+              <a href="patient_new.html" class="nav-link active text-warning">Patient Kalender</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" href="">Gesundheitszustand</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="">Dokumentation</a>
+              <a class="nav-link text-warning" href="Gesundheitszustand.html">Gesundheitszustand</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="p-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="">Herr Winter</h5>
         </div>
       </div>
     </div>
@@ -59,6 +51,15 @@
         frameborder="0" scrolling="no" height="600" width="1100"></iframe>
       <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Mzk4OGtjYmU0bGljbmtlMnNocjg5aWgwOTAgMzFnY3FpcmhkNWRkYmYwaTE3YmdnYjlubDBAZw&amp;tmsrc=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com">
         <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_de.gif"> </a>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h5 class="">Herr Winter</h5>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
