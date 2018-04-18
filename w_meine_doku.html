@@ -18,15 +18,9 @@
             <a class="nav-link text-white" href="#">Kontakt</a>
           </li>
         </ul>
-        <form class="form-inline m-0">
-          <input class="form-control mr-2" type="text" placeholder="Herr Winter">
-          <button class="btn btn-primary" type="submit">
-            <a href="w_patient.html" class="text-white">Patient Suchen</a>
-          </button>
-        </form>
       </div>
     </div>
-    <a class="btn navbar-btn ml-2 text-white btn-secondary" href="index.html"><i class="fa d-inline fa-lg fa-user-circle-o"></i>Abmelden</a>
+    <a class="btn navbar-btn ml-2 text-white btn-secondary" href="dashboard.html"><i class="fa d-inline fa-lg fa-user-circle-o"></i>Abmelden</a>
   </nav>
   <div class="p-4">
     <div class="container">
@@ -34,13 +28,13 @@
         <div class="col-md-12">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a href="" class="nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+              <a href="W_Dashboard.html" class="nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Wundschwester Kommunikation</a>
+              <a class="nav-link" href="W_Dashboard.html">Wundschwester Kommunikation</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="w_meine_doku.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meine Dokumentation</a>
+              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meine Dokumentation</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="w_meine_doku.html">Wundprotokoll</a>
               </div>
@@ -48,7 +42,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="w_geteilte_doku.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Geteilte Dokumentation</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="w_geteilte_doku.html">Wundanamnese</a>
+                <a class="dropdown-item" href="">Wundanamnese</a>
               </div>
             </li>
             <li class="nav-item">
@@ -63,16 +57,25 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <p class="lead">Wundprotokoll</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
           <div class="btn-group">
             <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Filter</button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Filtern nach Zeit</a>
+              <a class="dropdown-item" href="#" data-target="#myModal" data-toggle="modal">Filtern nach Zeit</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#" data-target="#patientSuchen" data-toggle="modal">Filtern nach Patient</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" data-target="#senderSuchen" data-toggle="modal">Filtern nach Sender</a>
             </div>
           </div>
+          <a href="#" class="btn btn-primary" data-target="#hochladen" data-toggle="modal">Hochladen</a>
+          <a href="#" class="btn btn-primary">Löschen</a>
         </div>
       </div>
     </div>
@@ -87,51 +90,51 @@
                 <th></th>
                 <th>Zeit</th>
                 <th>Patient</th>
-                <th>Sender</th>
-                <th>Thema</th>
-                <th>Gelesen</th>
+                <th>Erstellt von</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="table-primary">
-                <td class="bg-success">1
-                  <a href=""></a>
+              <tr>
+                <td>
+                  <a href="w_wundprotokoll.html">1</a>
                 </td>
-                <td class="bg-success">25.01.2018</td>
-                <td class="bg-success">Herr Winter</td>
-                <td class="bg-success">Frau Pfleger</td>
-                <td class="bg-success">Wundanamnese</td>
-                <td class="bg-success">Nein</td>
+                <td>24.01.2018</td>
+                <td>Herr Winter</td>
+                <td>Frau Sommer</td>
               </tr>
-              <tr class="table-primary">
-                <td class="bg-success">2
-                  <a href=""></a>
-                </td>
-                <td class="bg-success">20.01.2018</td>
-                <td class="bg-success">Frau März</td>
-                <td class="bg-success">Frau Pfleger</td>
-                <td class="bg-success">Wundprotokoll untergeschriben von Dr. Herbst</td>
-                <td class="bg-success">Nein</td>
+              <tr>
+                <td>2</td>
+                <td>20.01.2018</td>
+                <td>Frau März</td>
+                <td>Frau Sommer</td>
               </tr>
               <tr></tr>
               <tr>
                 <td>3</td>
                 <td>19.02.2017</td>
-                <td>Herr Winter</td>
-                <td>Frau Pfleger</td>
-                <td>Wundprotokoll an Dr. Hersbst gesendet</td>
-                <td>Ja</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>12.01.2015</td>
                 <td>Herr Frühauf</td>
-                <td>Dr. Herbst</td>
-                <td>Wundbehandlung Einbezogen</td>
-                <td>Ja</td>
+                <td>Frau Sommer</td>
               </tr>
+              <tr></tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="hochladen">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Hochladen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <input type="file" class="form-control-file" id="exampleFormControlFile1"> </div>
+        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Hochladen</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
         </div>
       </div>
     </div>
@@ -144,22 +147,6 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
         </div>
         <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Suchen</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="senderSuchen">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Sender</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
-        </div>
-        <div class="modal-body">
-          <input class="form-control mr-2" type="text" placeholder="Sender"> </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Suchen</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>

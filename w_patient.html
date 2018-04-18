@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-success">
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="#">Pflegedienstportal</a>
+      <a class="navbar-brand" href="dashboard.html">Pflegedienstportal</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -20,9 +20,7 @@
         </ul>
         <form class="form-inline m-0">
           <input class="form-control mr-2" type="text" placeholder="Herr Winter">
-          <button class="btn btn-success" type="submit">
-            <a href="Patient.html" class="text-light">Patient Suchen</a>
-          </button>
+          <button class="btn btn-primary" type="submit">Patient Suchen</button>
         </form>
       </div>
     </div>
@@ -34,16 +32,21 @@
         <div class="col-md-12">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a href="dashboard.html" class="nav-link text-success"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+              <a href="dashboard.html" class="nav-link text-primary"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
-              <a href="patient_new.html" class="nav-link text-success active">Patient Kalender</a>
+              <a href="" class="nav-link active text-primary">Patient Kalender</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="Gesundheitszustand.html">Gesundheitszustand</a>
+              <a class="nav-link text-primary" href="Gesundheitszustand.html">Gesundheitszustand</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-success" href="dokumentation.html">Dokumentation</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-primary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dokumentation&nbsp;</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Wundprotokoll</a>
+                <a class="dropdown-item" href="#">Wundanamnese</a>
+                <a class="dropdown-item" href="#">Stammdaten</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -52,10 +55,38 @@
   </div>
   <div class="p-0">
     <div class="container">
-      <iframe src="https://calendar.google.com/calendar/b/1/embed?mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Europe%2FBerlin" style="border-width:0"
-        frameborder="0" scrolling="no" height="600" width="1100"></iframe>
-      <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Mzk4OGtjYmU0bGljbmtlMnNocjg5aWgwOTAgMzFnY3FpcmhkNWRkYmYwaTE3YmdnYjlubDBAZw&amp;tmsrc=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com">
-        <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_de.gif"> </a>
+      <div class="row">
+        <div class="col-md-12">
+          <h5 class="">Herr Winter</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div style="overflow:hidden;">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-12">
+                  <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Mzk4OGtjYmU0bGljbmtlMnNocjg5aWgwOTAgMzFnY3FpcmhkNWRkYmYwaTE3YmdnYjlubDBAZw&amp;tmsrc=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com">
+                    <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_de.gif"> </a>
+                  <div id="datetimepicker12"></div>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+              $(function () {
+                  $('#datetimepicker12').datetimepicker({
+                      inline: true,
+                      sideBySide: true
+                  });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

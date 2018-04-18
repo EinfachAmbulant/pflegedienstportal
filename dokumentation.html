@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-success">
     <div class="container">
-      <a class="navbar-brand" href="#">Pflegedienstportal</a>
+      <a class="navbar-brand" href="dashboard.html">Pflegedienstportal</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -20,9 +20,7 @@
         </ul>
         <form class="form-inline m-0">
           <input class="form-control mr-2" type="text" placeholder="Herr Winter">
-          <button class="btn btn-success" type="submit">
-            <a href="Patient.html" class="text-light">Patient Suchen</a>
-          </button>
+          <button class="btn btn-success" type="submit">Patient Suchen</button>
         </form>
       </div>
     </div>
@@ -37,25 +35,38 @@
               <a href="dashboard.html" class="nav-link text-success"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
-              <a href="patient_new.html" class="nav-link text-success active">Patient Kalender</a>
+              <a href="patient_new.html" class="nav-link text-success">Patient Kalender</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-success" href="Gesundheitszustand.html">Gesundheitszustand</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="dokumentation.html">Dokumentation</a>
+              <a class="nav-link text-success active" href="#">Dokumentation</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="p-0">
+  <div class="py-5 bg-light">
     <div class="container">
-      <iframe src="https://calendar.google.com/calendar/b/1/embed?mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Europe%2FBerlin" style="border-width:0"
-        frameborder="0" scrolling="no" height="600" width="1100"></iframe>
-      <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Mzk4OGtjYmU0bGljbmtlMnNocjg5aWgwOTAgMzFnY3FpcmhkNWRkYmYwaTE3YmdnYjlubDBAZw&amp;tmsrc=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com">
-        <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_de.gif"> </a>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="pb-4 text-success">Pflegedokumentation</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="align-self-center text-md-right text-center col-md-4">
+          <h3 class="text-success">Stammdaten</h3>
+          <h3 class="text-success">Leistungsnachweis</h3>
+          <h3 class="text-success">Vitalwerte</h3>
+          <h3 class="text-success">Medikationsplan</h3>
+          <h3 class="text-success">Pflegeanamnese</h3>
+          <h3 class="text-success">Berichtblatt</h3>
+        </div>
+        <div class="my-3 col-md-4">
+          <img class="img-fluid d-block ml-1 mx-auto" src="https://www.boi-dokutech.de/images/slides/doku_pflegedokumentation/slide_01.jpg"> </div>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -20,7 +20,7 @@
         </ul>
       </div>
     </div>
-    <a class="btn navbar-btn ml-2 text-white btn-secondary" href="index.html"><i class="fa d-inline fa-lg fa-user-circle-o"></i>Abmelden</a>
+    <a class="btn navbar-btn ml-2 text-white btn-secondary" href="dashboard.html"><i class="fa d-inline fa-lg fa-user-circle-o"></i>Abmelden</a>
   </nav>
   <div class="p-4">
     <div class="container">
@@ -34,19 +34,19 @@
               <a class="nav-link" href="W_Dashboard.html">Wundschwester Kommunikation</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="w_meine_doku.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meine Dokumentation</a>
+              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meine Dokumentation</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="w_meine_doku.html">Wundprotokoll</a>
+                <a class="dropdown-item" href="">Wundprotokoll</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="w_geteilte_doku.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Geteilte Dokumentation</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="w_geteilte_doku.html">Wundanamnese</a>
+                <a class="dropdown-item" href="">Wundanamnese</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="">Kommunikation</a>
+              <a class="nav-link" href="">Kommunikation</a>
             </li>
           </ul>
         </div>
@@ -57,72 +57,69 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="btn-group">
-            <div class="btn-group">
-              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Filter</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Filtern nach Zeit</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-target="#patientSuchen" data-toggle="modal">Filtern nach Patient</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-target="#senderSuchen" data-toggle="modal">Filtern nach Sender</a>
-              </div>
-            </div>
-            <a href="meine_doku.html" class="btn btn-primary" data-target="#neuNachricht" data-toggle="modal">+ Neue Nachricht</a>
-            <a href="" class="btn btn-primary">Gesendet</a>
-            <a href="#" class="btn btn-primary" data-target="#notizMain" data-toggle="modal">Web Chat</a>
-          </div>
+          <p class="lead">Wundprotokoll: Frau März</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="p-4">
+  <div class="p-0">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <table class="table" style="">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Zeit</th>
-                <th>Für Patient</th>
-                <th>Sender</th>
-                <th>Thema</th>
-                <th>Gelesen</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="table-warning"></tr>
-              <tr class=""></tr>
-              <tr></tr>
-            </tbody>
-          </table>
+          <div class="btn-group">
+            <a href="wund_doku.html" class="btn btn-primary">Zurück zur List</a>
+            <a href="#" class="btn btn-primary" data-target="#mailDialog" data-toggle="modal">Als Email senden</a>
+            <a href="#" class="btn btn-primary" data-target="#teilenDialog" data-toggle="modal">Teilen</a>
+            <a href="#" class="btn btn-primary" data-target="#notizMain" data-toggle="modal">Notizen</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal" id="neuNachricht">
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">Erstellungsdatum:&nbsp;</li>
+            <li class="list-inline-item">24.01.2018</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-fluid d-block" src="http://www.pflege-zeit.de/typo3temp/GB/6a5035a16f.png"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="mailDialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Nachricht senden</h5>
+          <h5 class="modal-title">Mail senden</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
         </div>
         <div class="modal-body">
-          <p>An:</p>
-          <div class="modal-body">
-            <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Frau Pfleger</label> </div>
-            <div class="checkbox"> <label><input type="checkbox" value="">&nbsp;Dr. Herbst</label> </div>
-          </div>
-          <li class="list-inline-item">Für Patient:</li>
-          <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
-        </div>
-        <div class="modal-body">
-          <li class="list-inline-item">Thema:</li>
+          <li class="list-inline-item">Von:</li>
+          <input class="form-control mr-2" type="text" placeholder="Email">
+          <li class="list-inline-item">An:</li>
+          <input class="form-control mr-2" type="text" placeholder="Email">
+          <li class="list-inline-item">Betreff:</li>
           <input class="form-control mr-2" type="text" placeholder="">
           <li class="list-inline-item">Text:</li>
-          <input class="form-control mr-2 h-50" type="text" placeholder="">
-          <input type="file" class="form-control-file" id="exampleFormControlFile1"> </div>
+          <input class="form-control mr-2" type="text" placeholder="">
+          <li class="list-inline-item">Anhang:</li>
+          <div class="btn-group">
+            <button class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">Auswahl</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Wundanamnese</a>
+            </div>
+          </div>
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Senden</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
@@ -130,32 +127,65 @@
       </div>
     </div>
   </div>
-  <div class="modal" id="patientSuchen">
+  <div class="modal" id="teilenDialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Patient</h5>
+          <h5 class="modal-title">Teilen</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
         </div>
-        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
+        <div class="modal-body">
+          <div class="checkbox"> <label><input type="checkbox" value=""> Dr. Herbst</label> </div>
+        </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Suchen</button>
+          <button type="button" class="btn btn-primary">Teilen</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal" id="senderSuchen">
-    <div class="modal-dialog" role="document">
+  <div class="modal" id="notizMain">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Sender</h5>
+          <h5 class="modal-title">Notizen für Wundanamnese &nbsp;Max Mustermann</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
         </div>
-        <div class="modal-body"><select class="form-control"><option value="1">Frau Wolf</option><option value="2">Herr Mai</option><option value="3">Herr Fuchs</option></select></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Suchen</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        <div class="modal-body">
+          <div class="btn-group">
+            <a href="#" class="btn btn-outline-primary" data-target="#notizBlank" data-toggle="modal">+Anlegen</a>
+            <a href="#" class="btn btn-outline-primary">Löschen</a>
+          </div>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Notiz</th>
+                <th>erstellt von</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01.01.2018</td>
+                <td>
+                  <a href="#" data-target="#notizEdit" data-toggle="modal">Bemerkung</a>
+                </td>
+                <td>Frau Pfleger@Pflegedienst</td>
+              </tr>
+              <tr>
+                <td>12.12.2017</td>
+                <td>Fehler</td>
+                <td>Frau Sommer@Wundschwester</td>
+              </tr>
+              <tr>
+                <td>10.12.2017</td>
+                <td>Änderung</td>
+                <td>Dr. Herbst@Doktor</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
