@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+  <nav class="navbar navbar-expand-md navbar-dark bg-danger">
     <div class="container">
-      <a class="navbar-brand" href="">Therapienportal</a>
+      <a class="navbar-brand" href="">Angehorigenportal</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -26,19 +26,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <ul class="nav nav-tabs text-warning" style="">
+          <ul class="nav nav-tabs text-warning">
             <li class="nav-item">
-              <a href="" class="nav-link text-warning active"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+              <a href="" class="nav-link text-danger active"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#" data-target="#patient_Suchen" data-toggle="modal">Patient</a>
+              <a class="nav-link text-danger" href="#">Patient</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-warning" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Kommunikation</a>
+              <a class="nav-link dropdown-toggle text-danger" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Kommunikation</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="t_pflegekommunikation.html">Pflegedienst Kommunikation</a>
-                <a class="dropdown-item" href="#">...</a>
-                <a class="dropdown-item" href="#">...</a>
+                <a class="dropdown-item" href="#">Pflegedienst Kommunikation</a>
+                <a class="dropdown-item" href="#">Arzt Kommunikatiion</a>
               </div>
             </li>
           </ul>
@@ -51,7 +50,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="btn-group">
-            <button class="btn dropdown-toggle btn-warning" data-toggle="dropdown"> Filter</button>
+            <button class="btn dropdown-toggle btn-danger" data-toggle="dropdown"> Filter</button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Filtern nach Zeit</a>
               <div class="dropdown-divider"></div>
@@ -86,16 +85,7 @@
                 <td class="bg-success">25.01.2018</td>
                 <td class="bg-success">Herr Winter</td>
                 <td class="bg-success">Frau Pfleger</td>
-                <td class="bg-success">Termin Änderung</td>
-              </tr>
-              <tr class="table-primary">
-                <td class="bg-success">
-                  <a href="" class="text-dark">2</a>
-                </td>
-                <td class="bg-success">20.01.2018</td>
-                <td class="bg-success">Frau März</td>
-                <td class="bg-success">Frau Pfleger</td>
-                <td class="bg-success">Vitalwerte</td>
+                <td class="bg-success">Termin Vereinbarung</td>
               </tr>
             </tbody>
           </table>
@@ -129,23 +119,6 @@
           <input class="form-control mr-2" type="text" placeholder="Sender"> </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Suchen</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="patient_Suchen">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Patient suchen</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
-        </div>
-        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">
-            <a href="t_gesundheitszustand.html" class="text-white">Suchen</a>
-          </button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
         </div>
       </div>
