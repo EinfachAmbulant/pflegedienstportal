@@ -32,37 +32,38 @@
         <div class="col-md-12">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a href="W_Dashboard.html" class="nav-link text-primary"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+              <a href="W_Dashboard.html" class="nav-link text-primary active"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="w_gesundheitszustand.html">Übersicht</a>
+              <a class="nav-link text-primary" href="#" data-target="#patient_Suchen" data-toggle="modal">Patient</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link text-primary active">Patient Kalender</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="w_dokumentation.html">Dokumentation</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Kommunikation</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="w_ubersicht.html">Pflegedienst Kommunikation</a>
+                <a class="dropdown-item" href="#">Azt Kommunikation</a>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="p-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="">Herr Winter</h5>
+  <div class="modal" id="patient_Suchen">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Patient Suchen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option></select></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">
+            <a href="Gesundheitszustand.html" class="text-white">Suchen</a>
+          </button>
+          <button type="button" data-dismiss="modal" class="btn btn-secondary">Schließen</button>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="p-0">
-    <div class="container">
-      <iframe src="https://calendar.google.com/calendar/b/1/embed?mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Europe%2FBerlin" style="border-width:0"
-        frameborder="0" scrolling="no" height="600" width="1100"></iframe>
-      <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Mzk4OGtjYmU0bGljbmtlMnNocjg5aWgwOTAgMzFnY3FpcmhkNWRkYmYwaTE3YmdnYjlubDBAZw&amp;tmsrc=31gcqirhd5ddbf0i17bggb9nl0%40group.calendar.google.com">
-        <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_de.gif"> </a>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
