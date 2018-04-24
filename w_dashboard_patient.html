@@ -45,6 +45,15 @@
       </div>
     </div>
   </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-primary" type="submit" data-target="#patient_Suchen" data-toggle="modal">Patient Suchen</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="p-4">
     <div class="container">
       <div class="row">
@@ -59,30 +68,47 @@
             <tbody>
               <tr class="table">
                 <td class="">
-                  <a href="t_gesundheitszustand.html" class="text-dark">1</a>
+                  <a href="w_gesundheitszustand.html" class="text-dark">1</a>
                 </td>
                 <td class="">
-                  <a href="t_gesundheitszustand.html" class="text-dark">Herr Frühauf</a>
+                  <a href="w_gesundheitszustand.html" class="text-dark">Herr Frühauf</a>
                 </td>
               </tr>
               <tr class="table">
                 <td class="text-dark">
-                  <a href="t_gesundheitszustand.html" class="text-dark">2</a>
+                  <a href="w_gesundheitszustand.html" class="text-dark">2</a>
                 </td>
                 <td class="">
-                  <a href="t_gesundheitszustand.html" class="text-dark">Frau März</a>
+                  <a href="w_gesundheitszustand.html" class="text-dark">Frau März</a>
                 </td>
               </tr>
               <tr class="table">
                 <td>
-                  <a href="t_gesundheitszustand.html" class="text-dark">3</a>
+                  <a href="w_gesundheitszustand.html" class="text-dark">3</a>
                 </td>
                 <td>
-                  <a href="t_gesundheitszustand.html" class="text-dark">Herr Winter</a>
+                  <a href="w_gesundheitszustand.html" class="text-dark">Herr Winter</a>
                 </td>
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="patient_Suchen">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Patient Suchen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="">Herr Frühauf</option></select></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">
+            <a href="t_gesundheitszustand.html" class="text-white">Suchen</a>
+          </button>
+          <button type="button" data-dismiss="modal" class="btn btn-primary">Schließen</button>
         </div>
       </div>
     </div>
