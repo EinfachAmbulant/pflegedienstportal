@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
+
+<body>
+  <div class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-success"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success active" href="#" data-target="#patient_Suchen" data-toggle="modal">Patient</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Kommunikation</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="wund_kommunikation.html">Wundschwester Kommunikation</a>
+                <a class="dropdown-item" href="therapie_kommunikation.html">Therapie Kommunikation</a>
+                <a class="dropdown-item" href="ang_kommunikation.html">Angehörige Kommunikation</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-success" type="submit" data-target="#patient_Suchen" data-toggle="modal">Patient Suchen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Patient</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table">
+                <td class="">
+                  <a href="Gesundheitszustand.html" class="text-dark">1</a>
+                </td>
+                <td class="">
+                  <a href="Gesundheitszustand.html" class="text-dark">Herr Frühauf</a>
+                </td>
+              </tr>
+              <tr class="table">
+                <td class="text-dark">
+                  <a href="Gesundheitszustand.html" class="text-dark">2</a>
+                </td>
+                <td class="">
+                  <a href="Gesundheitszustand.html" class="text-dark">Frau März</a>
+                </td>
+              </tr>
+              <tr class="table">
+                <td>
+                  <a href="Gesundheitszustand.html" class="text-dark">3</a>
+                </td>
+                <td>
+                  <a href="Gesundheitszustand.html" class="text-dark">Herr Winter</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="patient_Suchen">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Patient Suchen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="">Herr Frühauf</option></select></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">
+            <a href="Gesundheitszustand.html" class="text-white">Suchen</a>
+          </button>
+          <button type="button" data-dismiss="modal" class="btn btn-secondary">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
