@@ -28,10 +28,10 @@
         <div class="col-md-12">
           <ul class="nav nav-tabs text-warning">
             <li class="nav-item">
-              <a href="" class="nav-link text-danger active"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+              <a href="a_home.html" class="nav-link text-danger"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" href="a_home_patient.html" data-target="#patient_Suchen" data-toggle="modal">Patient</a>
+              <a class="nav-link text-danger active" href="#" data-target="#patient_Suchen" data-toggle="modal">Patient</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-danger" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Kommunikation</a>
@@ -49,16 +49,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="btn-group">
-            <button class="btn dropdown-toggle btn-danger" data-toggle="dropdown"> Filter</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Filtern nach Zeit</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" data-target="#patientSuchen" data-toggle="modal">Filtern nach Patient</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" data-target="#senderSuchen" data-toggle="modal">Filtern nach Sender</a>
-            </div>
-          </div>
+          <button class="btn btn-danger" type="submit" data-target="#patient_Suchen" data-toggle="modal">Patient Suchen</button>
         </div>
       </div>
     </div>
@@ -66,60 +57,26 @@
   <div class="p-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-5">
           <table class="table">
             <thead>
               <tr>
                 <th></th>
-                <th>Zeit</th>
                 <th>Patient</th>
-                <th>Sender</th>
-                <th>Thema</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="table-primary">
-                <td class="bg-success">
-                  <a href="" class="text-dark">1</a>
+              <tr class="table">
+                <td class="">
+                  <a href="a_gesundheitszustand.html" class="text-dark">1</a>
                 </td>
-                <td class="bg-success">25.01.2018</td>
-                <td class="bg-success">Herr Winter</td>
-                <td class="bg-success">Frau Pfleger</td>
-                <td class="bg-success">Termin Vereinbarung</td>
+                <td class="">
+                  <a href="a_gesundheitszustand.html" class="text-dark">Herr Winter</a>
+                </td>
               </tr>
+              <tr class="table"></tr>
             </tbody>
           </table>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="patientSuchen">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Patient</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
-        </div>
-        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Suchen</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="senderSuchen">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Sender</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
-        </div>
-        <div class="modal-body">
-          <input class="form-control mr-2" type="text" placeholder="Sender"> </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Suchen</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
         </div>
       </div>
     </div>
@@ -128,15 +85,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Patient suchen</h5>
+          <h5 class="modal-title">Patient Suchen</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
         </div>
-        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option><option value="2">Frau März</option><option value="3">Herr Frühauf</option></select></div>
+        <div class="modal-body"><select class="form-control"><option value="1">Herr Winter</option></select></div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">
-            <a href="a_gesundheitszustand.html" class="text-white">Suchen</a>
+          <button type="button" class="btn btn-success">
+            <a href="Gesundheitszustand.html" class="text-white">Suchen</a>
           </button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+          <button type="button" data-dismiss="modal" class="btn btn-secondary">Schließen</button>
         </div>
       </div>
     </div>
